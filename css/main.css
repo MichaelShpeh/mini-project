@@ -1,1 +1,23 @@
-/*# sourceMappingURL=main.css.map */
+.header {
+  background-color: wheat;
+}
+@media screen and (max-width: 767px) {
+  .header .header-list {
+    display: none;
+  }
+}
+.header .header__input {
+  display: none;
+}
+.header .header__input:checked ~ .label > .label__button-opened {
+  display: none;
+}
+.header .header__input ~ .label > .label__button-closed {
+  display: none;
+}
+.header .header__input:checked ~ .label > .label__button-closed {
+  display: block;
+}
+.header input[type=checkbox]:checked ~ .label-list {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
