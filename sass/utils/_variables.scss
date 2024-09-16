@@ -1,0 +1,8 @@
+$fonts: (
+    roboto: 'Roboto',
+    raleway: 'Reem Kufi'
+);
+
+@function getFont($key) {
+    @return map-get($fonts, $key)
+}

@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
@@ -60,6 +65,20 @@
                     standard dummy text ever since the 1500s, when an unknown printer
                 </p>
                 <button class="main__button">to contact</button>
+                <picture>
+                    <source srcset="./images/girl-1x-d.png, /images/girl-2x-d.png." media="(min-width: 1200px)">
+                    <source srcset="./images/girl-1x-t.png, ./images/girl-2x-t.png" media="(min-width: 768px)">
+                    <source srcset="./images/girl-1x-m.png, ./images/girl-2x-m.png" media="(min-width: 480px)">
+
+                    <img class="images__img" src="./images/girl-1x-m.png" alt="girl">
+                </picture>
+                <picture>
+                    <source srcset="./images/girl-2-1x-d.png, /images/girl-2-2x-d.png." media="(min-width: 1200px)">
+                    <source srcset="./images/girl-2-1x-t.png, ./images/girl-2-2x-t.png" media="(min-width: 768px)">
+                    <source srcset="./images/girl-2-1x-m.png, ./images/girl-2-2x-m.png" media="(min-width: 480px)">
+
+                    <img class="images__img" src="./images/girl-1x-m.png" alt="girl">
+                </picture>
             </nav>
             <nav class="nav-about">
                 <h2 class="nav-about-title">ABOUT ME</h2>

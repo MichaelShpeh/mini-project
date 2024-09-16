@@ -1,0 +1,237 @@
+.main {
+    padding-top: 50px;
+    background-image: url(/images/background-1x-mobile.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image:
+            url(/images/background-2x-mobile.png);
+    }
+
+    @media screen and (min-width:768px) {
+        background-image: url(/images/background-1x-tablet.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(/images/background-2x-tablet.png);
+        }
+
+        @media screen and (min-width:1200px) {
+            background-image: url(/images/background-1x-d.png);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(/images/background-2x-d.png);
+
+            }
+        }
+    }
+
+
+    .main-nav {
+
+        .main-title {
+            font-family: getFont(Reem Kufi);
+            font-weight: 400;
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .main-title-two {
+            font-family: getFont(Roboto);
+            font-weight: 600;
+            color: #e396f6;
+        }
+
+        .main__text {
+            font-family: getFont(Roboto);
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .main__button {
+            width: 168px;
+            height: 44px;
+            display: block;
+            border: none;
+            border-radius: 33px;
+            background: #cfa7d9;
+            font-family: getFont(Roboto);
+            font-weight: 300;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+
+    .main::before {
+        background-image: url(/images/girl-1x-m.png);
+        content: '';
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image:
+                url(/images/girl-2x-m.png);
+        }
+
+        @media screen and (min-width:768px) {
+            background-image: url(/images/girl-1x-t.png);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(/images/girl-2x-t.png);
+            }
+
+            @media screen and (min-width:1200px) {
+                background-image: url(/images/girl-1x-d.png);
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(/images/girl-2x-d.png);
+
+                }
+            }
+        }
+    }
+
+    .main::after {
+        background-image: url(/images/girl-2-1x-m.png);
+        content: '';
+        z-index: 2;
+
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image:
+                url(/images/girl-2-2x-m.png);
+        }
+
+        @media screen and (min-width:768px) {
+            background-image: url(/images/girl-2-1x-t.png);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(/images/girl-2-2x-t.png);
+            }
+
+            @media screen and (min-width:1200px) {
+                background-image: url(/images/girl-2-1x-d.png);
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: url(/images/girl-2-2x-d.png);
+
+                }
+            }
+        }
+    }
+
+    .nav-about {
+        .nav-about-title {
+            font-family: getFont(Roboto);
+            font-weight: 700;
+            font-size: 36px;
+            color: #c38cd1;
+        }
+
+        .nav-about__text {
+            font-family: getFont(Roboto);
+            font-weight: 300;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+
+    .nav-prices {
+        background: #fff;
+
+        .nav-prices-title {
+            font-family: getFont(Reem Kufi);
+            font-weight: 700;
+            font-size: 36px;
+            color: #000;
+        }
+
+        .nav-prices__text {
+            font-family: getFont(Roboto);
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .nav-prices__text:nth-child(1) {}
+
+        .nav-prices__text:nth-child(2) {}
+
+        .nav-prices__text:nth-child(3) {}
+    }
+
+    .nav-reviews {
+        .nav-reviews-title {
+            font-family: getFont(Roboto);
+            font-weight: 400;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .nav-reviews-title-two {
+            font-family: getFont(Reem Kufi);
+            font-weight: 400;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .nav-reviews__text {
+            font-family: getFont(Roboto);
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+
+    .nav-contacts {
+        background: #fff;
+
+        .nav-contacts-title {
+            font-family: getFont(Reem Kufi);
+            font-weight: 700;
+            font-size: 36px;
+            color: #252020;
+        }
+
+        .nav-contacts__link {
+            font-family: getFont(Roboto);
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .nav-contacts__link:nth-child(1) {}
+
+        .nav-contacts__link:nth-child(2) {}
+
+        .nav-contacts__link:nth-child(3) {}
+
+        .nav-contacts__button {
+            width: 132px;
+            height: 32px;
+            display: block;
+            border: none;
+            border-radius: 44px;
+            background: #c9b6de;
+            font-family: getFont(Roboto);
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}
