@@ -33,7 +33,10 @@
         }
 
         .footer-list__link {
-            color: white;
+            font-family: getFont(Roboto);
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
         }
     }
 }
