@@ -236,6 +236,40 @@
   color: #fff;
 }
 
+.footer {
+  background-color: #F4D2FD;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer .foot {
+  display: flex;
+}
+.footer .footer-title {
+  width: 110px;
+  height: 43px;
+  margin-left: 20px;
+  margin-top: 50px;
+  font-family: getFont(Reem Kufi);
+  font-weight: 400;
+  font-size: 32;
+  color: white;
+  outline: 1px solid white;
+}
+.footer .footer-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.footer .footer-list .footer-list__item {
+  margin-bottom: 10px;
+}
+.footer .footer-list .footer-list__item:last-of-type {
+  margin-bottom: 0px;
+}
+.footer .footer-list .footer-list__link {
+  color: white;
+}
+
 body {
   font-family: "Roboto";
   box-sizing: border-box;
