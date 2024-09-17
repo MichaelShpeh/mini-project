@@ -2,6 +2,7 @@
   width: 100%;
   height: 60px;
   background-color: transparent;
+  position: absolute;
 }
 @media screen and (max-width: 767px) {
   .header .header-list {
@@ -10,6 +11,10 @@
 }
 .header .header__input {
   display: none;
+}
+.header .label {
+  margin-left: 336px;
+  fill: #fff;
 }
 .header .header__input:checked ~ .label > .label__button-opened {
   display: none;
@@ -27,6 +32,8 @@
 .main {
   padding-top: 50px;
   background-image: url(/images/background-1x-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .main {
@@ -114,34 +121,74 @@
 }
 .main .nav-prices {
   background: #fff;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 .main .nav-prices .nav-prices-title {
   font-family: getFont(Reem Kufi);
   font-weight: 700;
   font-size: 36px;
   color: #000;
-  margin: 0;
+  margin-left: 130px;
+  margin-bottom: 30px;
 }
-.main .nav-prices .nav-prices__text {
+.main .nav-prices .nav-prices-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (max-width: 1199px) {
+  .main .nav-prices .nav-prices-list {
+    flex-direction: column;
+  }
+}
+.main .nav-prices .nav-prices-list__item {
+  margin-bottom: 50px;
+}
+.main .nav-prices .nav-prices-list__item:last-of-type {
+  margin-bottom: 0px;
+}
+.main .nav-prices .nav-prices__button {
+  width: 107px;
+  height: 49px;
+  background: #cfa7d9;
+  border: none;
   font-family: getFont(Roboto);
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   margin: 0;
 }
+.main .nav-reviews {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
 .main .nav-reviews .nav-reviews-title {
   font-family: getFont(Roboto);
   font-weight: 400;
   font-size: 36px;
   color: #fff;
-  margin: 0;
+  margin-left: 105px;
+}
+.main .nav-reviews .nav-reviews-list {
+  width: 296px;
+  height: 109px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  background-color: #e59af8;
 }
 .main .nav-reviews .nav-reviews-title-two {
   font-family: getFont(Reem Kufi);
   font-weight: 400;
   font-size: 18px;
   color: #fff;
-  margin: 0;
+  margin-bottom: 10px;
 }
 .main .nav-reviews .nav-reviews__text {
   font-family: getFont(Roboto);
@@ -152,13 +199,21 @@
 }
 .main .nav-contacts {
   background: #fff;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 .main .nav-contacts .nav-contacts-title {
   font-family: getFont(Reem Kufi);
   font-weight: 700;
   font-size: 36px;
   color: #252020;
-  margin: 0;
+  margin-left: 82px;
+}
+.main .nav-contacts .nav-contacts-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .main .nav-contacts .nav-contacts__link {
   font-family: getFont(Roboto);
@@ -170,6 +225,7 @@
 .main .nav-contacts .nav-contacts__button {
   width: 132px;
   height: 32px;
+  margin-left: 114px;
   display: block;
   border: none;
   border-radius: 44px;
@@ -178,4 +234,73 @@
   font-weight: 400;
   font-size: 14px;
   color: #fff;
+}
+
+body {
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.conteiner {
+  width: 100%;
+  min-width: 360px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .conteiner {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    max-width: 1200px;
+  }
 }/*# sourceMappingURL=main.css.map */

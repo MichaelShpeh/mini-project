@@ -1,6 +1,8 @@
 .main {
     padding-top: 50px;
     background-image: url(/images/background-1x-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -193,16 +195,43 @@
 
     .nav-prices {
         background: #fff;
+        padding-top: 10px;
+        padding-bottom: 50px;
 
         .nav-prices-title {
             font-family: getFont(Reem Kufi);
             font-weight: 700;
             font-size: 36px;
             color: #000;
-            margin: 0;
+            margin-left: 130px;
+            margin-bottom: 30px;
         }
 
-        .nav-prices__text {
+        .nav-prices-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            list-style: none;
+
+            @media screen and (max-width:1199px) {
+                flex-direction: column;
+            }
+        }
+
+        .nav-prices-list__item {
+            margin-bottom: 50px;
+        }
+
+        .nav-prices-list__item:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .nav-prices__button {
+            width: 107px;
+            height: 49px;
+            background: #cfa7d9;
+            border: none;
             font-family: getFont(Roboto);
             font-weight: 600;
             font-size: 14px;
@@ -218,12 +247,27 @@
     }
 
     .nav-reviews {
+        padding-top: 10px;
+        padding-bottom: 40px;
+
         .nav-reviews-title {
             font-family: getFont(Roboto);
             font-weight: 400;
             font-size: 36px;
             color: #fff;
-            margin: 0;
+            margin-left: 105px;
+        }
+
+        .nav-reviews-list {
+            width: 296px;
+            height: 109px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin: 0 auto;
+            background-color: #e59af8;
         }
 
         .nav-reviews-title-two {
@@ -231,8 +275,9 @@
             font-weight: 400;
             font-size: 18px;
             color: #fff;
-            margin: 0;
+            margin-bottom: 10px;
         }
+
 
         .nav-reviews__text {
             font-family: getFont(Roboto);
@@ -245,13 +290,22 @@
 
     .nav-contacts {
         background: #fff;
+        padding-top: 10px;
+        padding-bottom: 50px;
 
         .nav-contacts-title {
             font-family: getFont(Reem Kufi);
             font-weight: 700;
             font-size: 36px;
             color: #252020;
-            margin: 0;
+            margin-left: 82px;
+        }
+
+        .nav-contacts-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
         }
 
         .nav-contacts__link {
@@ -271,6 +325,7 @@
         .nav-contacts__button {
             width: 132px;
             height: 32px;
+            margin-left: 114px;
             display: block;
             border: none;
             border-radius: 44px;

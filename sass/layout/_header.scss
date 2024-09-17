@@ -2,6 +2,7 @@
     width: 100%;
     height: 60px;
     background-color: transparent;
+    position: absolute;
 
     .header-list {
         @media screen and (max-width:767px) {
@@ -17,7 +18,10 @@
         display: none;
     }
 
-    .label {}
+    .label {
+        margin-left: 336px;
+        fill: #fff;
+    }
 
     .label__button-opened {}
 
