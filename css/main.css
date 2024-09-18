@@ -245,8 +245,7 @@
   display: flex;
 }
 .footer .footer-title {
-  width: 110px;
-  height: 43px;
+  height: 40px;
   margin-left: 20px;
   margin-top: 50px;
   font-family: getFont(Reem Kufi);
