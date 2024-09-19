@@ -1,8 +1,16 @@
 .header {
   width: 100%;
   height: 60px;
+  padding-top: 20px;
   background-color: transparent;
   position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+.header .head {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 767px) {
   .header .header-list {
@@ -13,8 +21,19 @@
   display: none;
 }
 .header .label {
-  margin-left: 336px;
+  margin-right: 40px;
   fill: #fff;
+  position: relative;
+}
+.header .label__button-opened {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.header .label__button-closed {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 .header .header__input:checked ~ .label > .label__button-opened {
   display: none;
@@ -31,33 +50,23 @@
 
 .main {
   padding-top: 50px;
-  background-image: url(/images/background-1x-mobile.png);
+  background-image: url(../images/background-1x-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .main {
-    background-image: url(/images/background-2x-mobile.png);
+    background-image: url(../images/background-2x-mobile.png);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .main {
-    background-image: url(/images/background-1x-tablet.png);
+    background-image: url(../images/background-1x-d.png);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main {
-    background-image: url(/images/background-2x-tablet.png);
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .main {
-    background-image: url(/images/background-1x-d.png);
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .main {
-    background-image: url(/images/background-2x-d.png);
+    background-image: url(../images/background-2x-d.png);
   }
 }
 .main .main-nav {
@@ -123,13 +132,15 @@
   background: #fff;
   padding-top: 10px;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main .nav-prices .nav-prices-title {
   font-family: getFont(Reem Kufi);
   font-weight: 700;
   font-size: 36px;
   color: #000;
-  margin-left: 130px;
   margin-bottom: 30px;
 }
 .main .nav-prices .nav-prices-list {
@@ -164,13 +175,15 @@
 .main .nav-reviews {
   padding-top: 10px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main .nav-reviews .nav-reviews-title {
   font-family: getFont(Roboto);
   font-weight: 400;
   font-size: 36px;
   color: #fff;
-  margin-left: 105px;
 }
 .main .nav-reviews .nav-reviews-list {
   width: 296px;
@@ -201,13 +214,15 @@
   background: #fff;
   padding-top: 10px;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main .nav-contacts .nav-contacts-title {
   font-family: getFont(Reem Kufi);
   font-weight: 700;
   font-size: 36px;
   color: #252020;
-  margin-left: 82px;
 }
 .main .nav-contacts .nav-contacts-list {
   display: flex;
@@ -225,7 +240,6 @@
 .main .nav-contacts .nav-contacts__button {
   width: 132px;
   height: 32px;
-  margin-left: 114px;
   display: block;
   border: none;
   border-radius: 44px;
@@ -319,24 +333,24 @@ img {
   height: auto;
 }
 
-.conteiner {
+.container {
   width: 100%;
   min-width: 360px;
   padding: 0 15px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
-  .conteiner {
+  .container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .container {
     max-width: 1200px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,17 @@
 .header {
     width: 100%;
     height: 60px;
+    padding-top: 20px;
     background-color: transparent;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+
+    .head {
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+    }
 
     .header-list {
         @media screen and (max-width:767px) {
@@ -19,13 +28,22 @@
     }
 
     .label {
-        margin-left: 336px;
+        margin-right: 40px;
         fill: #fff;
+        position: relative;
     }
 
-    .label__button-opened {}
+    .label__button-opened {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 
-    .label__button-closed {}
+    .label__button-closed {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 
     .header__input:checked~.label>.label__button-opened {
         display: none;

@@ -1,34 +1,33 @@
 .main {
     padding-top: 50px;
-    background-image: url(/images/background-1x-mobile.png);
+    background-image: url(../images/background-1x-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
         background-image:
-            url(/images/background-2x-mobile.png);
+            url(../images/background-2x-mobile.png);
     }
 
-    @media screen and (min-width:768px) {
-        background-image: url(/images/background-1x-tablet.png);
+    // @media screen and (min-width:768px) {
+    //     background-image: url(/images/background-1x-tablet.png);
+
+    //     @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //         background-image: url(/images/background-2x-tablet.png);
+    //     }
+
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/background-1x-d.png);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(/images/background-2x-tablet.png);
-        }
-
-        @media screen and (min-width:1200px) {
-            background-image: url(/images/background-1x-d.png);
-
-            @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url(/images/background-2x-d.png);
-
-            }
+            background-image: url(../images/background-2x-d.png);
         }
     }
 
@@ -71,35 +70,38 @@
     //     }
     // }
 
-    // .main::after {
-    //     background-image: url(/images/girl-2-1x-m.png);
-    //     content: '';
-    //     z-index: 2;
+    //     .main::after {
+    //         width: 100px;
+    //         height: 100px;
+    //         display: block;
+    //         background-image: url(../images/girl-2-1x-m.png);
+    //         content: '';
+    //         z-index: 2;
 
-
-    //     @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //     screen and (min-resolution: 2dppx) {
-    //         background-image:
-    //             url(/images/girl-2-2x-m.png);
-    //     }
-
-    //     @media screen and (min-width:768px) {
-    //         background-image: url(/images/girl-2-1x-t.png);
 
     //         @media screen and (min-device-pixel-ratio: 2),
     //         screen and (min-resolution: 192dpi),
     //         screen and (min-resolution: 2dppx) {
-    //             background-image: url(/images/girl-2-2x-t.png);
+    //             background-image:
+    //                 url(../images/girl-2-2x-m.png);
     //         }
 
+    //         // @media screen and (min-width:768px) {
+    //         //     background-image: url(/images/girl-2-1x-t.png);
+
+    //         //     @media screen and (min-device-pixel-ratio: 2),
+    //         //     screen and (min-resolution: 192dpi),
+    //         //     screen and (min-resolution: 2dppx) {
+    //         //         background-image: url(/images/girl-2-2x-t.png);
+    //         //     }
+
     //         @media screen and (min-width:1200px) {
-    //             background-image: url(/images/girl-2-1x-d.png);
+    //             background-image: url(../images/girl-2-1x-d.png);
 
     //             @media screen and (min-device-pixel-ratio: 2),
     //             screen and (min-resolution: 192dpi),
     //             screen and (min-resolution: 2dppx) {
-    //                 background-image: url(/images/girl-2-2x-d.png);
+    //                 background-image: url(../images/girl-2-2x-d.png);
 
     //             }
     //         }
@@ -197,13 +199,16 @@
         background: #fff;
         padding-top: 10px;
         padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
 
         .nav-prices-title {
             font-family: getFont(Reem Kufi);
             font-weight: 700;
             font-size: 36px;
             color: #000;
-            margin-left: 130px;
             margin-bottom: 30px;
         }
 
@@ -249,13 +254,15 @@
     .nav-reviews {
         padding-top: 10px;
         padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .nav-reviews-title {
             font-family: getFont(Roboto);
             font-weight: 400;
             font-size: 36px;
             color: #fff;
-            margin-left: 105px;
         }
 
         .nav-reviews-list {
@@ -292,13 +299,15 @@
         background: #fff;
         padding-top: 10px;
         padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .nav-contacts-title {
             font-family: getFont(Reem Kufi);
             font-weight: 700;
             font-size: 36px;
             color: #252020;
-            margin-left: 82px;
         }
 
         .nav-contacts-list {
@@ -325,7 +334,6 @@
         .nav-contacts__button {
             width: 132px;
             height: 32px;
-            margin-left: 114px;
             display: block;
             border: none;
             border-radius: 44px;
