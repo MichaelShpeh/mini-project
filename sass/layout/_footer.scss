@@ -28,6 +28,11 @@
             margin-bottom: 10px;
         }
 
+        .footer-list__item:hover {
+            cursor: pointer;
+            color: #c38cd1;
+        }
+
         .footer-list__item:last-of-type {
             margin-bottom: 0px;
         }
@@ -37,6 +42,11 @@
             font-weight: 400;
             font-size: 14px;
             color: #fff;
+        }
+
+        .footer-list__link:hover {
+            cursor: pointer;
+            color: #c38cd1;
         }
     }
 }

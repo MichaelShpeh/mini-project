@@ -33,6 +33,10 @@
         position: relative;
     }
 
+    .label:hover {
+        cursor: pointer;
+    }
+
     .label__button-opened {
         position: absolute;
         top: 0px;

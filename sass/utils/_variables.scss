@@ -1,7 +1,16 @@
+$button-color: #CFA7D9;
+$secondary-button-color: #C9B6DE;
+$blacktext-color: #000000;
+$whitetext-color: #FFFFFF;
+$shamil-color: #E59AF8;
+$footer-color: #F4D2FD;
+
 $fonts: (
     roboto: 'Roboto',
     raleway: 'Reem Kufi'
 );
+
+
 
 @function getFont($key) {
     @return map-get($fonts, $key)

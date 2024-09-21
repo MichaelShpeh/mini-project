@@ -154,6 +154,10 @@
             margin-top: 60px;
         }
 
+        .main__button:hover {
+            cursor: pointer;
+        }
+
         // .images__img {
         //     position: absolute;
 
@@ -237,11 +241,16 @@
             height: 49px;
             background: #cfa7d9;
             border: none;
+            border-radius: 10px;
             font-family: getFont(Roboto);
             font-weight: 600;
             font-size: 14px;
             color: #fff;
             margin: 0;
+        }
+
+        .nav-prices__button:hover {
+            cursor: pointer;
         }
 
         // .nav-prices__text:nth-child(1) {}
@@ -263,6 +272,7 @@
             font-weight: 400;
             font-size: 36px;
             color: #fff;
+            margin-bottom: 20px;
         }
 
         .nav-reviews-list {
@@ -308,13 +318,22 @@
             font-weight: 700;
             font-size: 36px;
             color: #252020;
+            margin-bottom: 10px;
         }
 
         .nav-contacts-list {
+            width: 206px;
+            height: 251px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .nav-contacts-list__item:hover {
+            cursor: pointer;
+            color: #c38cd1;
         }
 
         .nav-contacts__link {
@@ -323,6 +342,11 @@
             font-size: 14px;
             color: #000;
             margin: 0;
+        }
+
+        .nav-contacts__link:hover {
+            cursor: pointer;
+            color: #c38cd1;
         }
 
         // .nav-contacts__link:nth-child(1) {}

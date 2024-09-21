@@ -25,6 +25,9 @@
   fill: #fff;
   position: relative;
 }
+.header .label:hover {
+  cursor: pointer;
+}
 .header .label__button-opened {
   position: absolute;
   top: 0px;
@@ -109,6 +112,9 @@
   margin: 0;
   margin-top: 60px;
 }
+.main .main-nav .main__button:hover {
+  cursor: pointer;
+}
 .main .nav-about {
   padding-top: 30px;
   padding-bottom: 340px;
@@ -166,11 +172,15 @@
   height: 49px;
   background: #cfa7d9;
   border: none;
+  border-radius: 10px;
   font-family: getFont(Roboto);
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   margin: 0;
+}
+.main .nav-prices .nav-prices__button:hover {
+  cursor: pointer;
 }
 .main .nav-reviews {
   padding-top: 10px;
@@ -184,6 +194,7 @@
   font-weight: 400;
   font-size: 36px;
   color: #fff;
+  margin-bottom: 20px;
 }
 .main .nav-reviews .nav-reviews-list {
   width: 296px;
@@ -223,12 +234,20 @@
   font-weight: 700;
   font-size: 36px;
   color: #252020;
+  margin-bottom: 10px;
 }
 .main .nav-contacts .nav-contacts-list {
+  width: 206px;
+  height: 251px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 30px;
+}
+.main .nav-contacts .nav-contacts-list__item:hover {
+  cursor: pointer;
+  color: #c38cd1;
 }
 .main .nav-contacts .nav-contacts__link {
   font-family: getFont(Roboto);
@@ -236,6 +255,10 @@
   font-size: 14px;
   color: #000;
   margin: 0;
+}
+.main .nav-contacts .nav-contacts__link:hover {
+  cursor: pointer;
+  color: #c38cd1;
 }
 .main .nav-contacts .nav-contacts__button {
   width: 132px;
@@ -276,6 +299,10 @@
 .footer .footer-list .footer-list__item {
   margin-bottom: 10px;
 }
+.footer .footer-list .footer-list__item:hover {
+  cursor: pointer;
+  color: #c38cd1;
+}
 .footer .footer-list .footer-list__item:last-of-type {
   margin-bottom: 0px;
 }
@@ -284,6 +311,10 @@
   font-weight: 400;
   font-size: 14px;
   color: #fff;
+}
+.footer .footer-list .footer-list__link:hover {
+  cursor: pointer;
+  color: #c38cd1;
 }
 
 body {
