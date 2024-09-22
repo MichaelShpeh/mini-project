@@ -11,7 +11,7 @@
         height: 40px;
         margin-left: 20px;
         margin-top: 50px;
-        font-family: getFont(Reem Kufi);
+        font-family: getFont('Reem-Kufi');
         font-weight: 400;
         font-size: 32;
         color: white;
@@ -26,6 +26,9 @@
 
         .footer-list__item {
             margin-bottom: 10px;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .footer-list__item:hover {
@@ -38,10 +41,13 @@
         }
 
         .footer-list__link {
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 400;
             font-size: 14px;
             color: #fff;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .footer-list__link:hover {

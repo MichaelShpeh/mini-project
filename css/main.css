@@ -4,26 +4,55 @@
   padding-top: 20px;
   background-color: transparent;
   position: absolute;
-  display: flex;
-  justify-content: flex-end;
 }
 .header .head {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-@media screen and (max-width: 767px) {
+.header .header-list {
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
   .header .header-list {
     display: none;
   }
 }
+.header .header-list .header-list__link {
+  font-family: getFont("Roboto");
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header .header-list .header-list__link:hover {
+  cursor: pointer;
+  color: #c38cd1;
+}
 .header .header__input {
   display: none;
+}
+.header .text-none {
+  width: 0px;
+  height: 0px;
+  display: block;
+  color: transparent;
 }
 .header .label {
   margin-right: 40px;
   fill: #fff;
   position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .header .label {
+    display: none;
+  }
 }
 .header .label:hover {
   cursor: pointer;
@@ -77,21 +106,21 @@
   padding-bottom: 150px;
 }
 .main .main-nav .main-title {
-  font-family: getFont(Reem Kufi);
+  font-family: getFont("Reem-Kufi");
   font-weight: 400;
   font-size: 32px;
   color: #fff;
   margin: 0;
 }
 .main .main-nav .main-title-two {
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 600;
   font-size: 32px;
   color: #e396f6;
   margin: 0;
 }
 .main .main-nav .main__text {
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -105,7 +134,7 @@
   border: none;
   border-radius: 33px;
   background: #cfa7d9;
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 300;
   font-size: 18px;
   color: #fff;
@@ -120,14 +149,14 @@
   padding-bottom: 340px;
 }
 .main .nav-about .nav-about-title {
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 700;
   font-size: 36px;
   color: #c38cd1;
   margin: 0;
 }
 .main .nav-about .nav-about__text {
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 300;
   font-size: 14px;
   color: #fff;
@@ -143,21 +172,36 @@
   align-items: center;
 }
 .main .nav-prices .nav-prices-title {
-  font-family: getFont(Reem Kufi);
+  font-family: getFont("Reem-Kufi");
   font-weight: 700;
   font-size: 36px;
   color: #000;
   margin-bottom: 30px;
 }
+.main .nav-prices .nav-prices-lists {
+  display: flex;
+}
 .main .nav-prices .nav-prices-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .main .nav-prices .nav-prices-list {
+    margin-right: 370px;
+  }
+}
+.main .nav-prices .nav-prices-list-two {
+  display: none;
   padding: 0;
   list-style: none;
 }
-@media screen and (max-width: 1199px) {
-  .main .nav-prices .nav-prices-list {
+@media screen and (min-width: 1200px) {
+  .main .nav-prices .nav-prices-list-two {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
   }
 }
@@ -173,11 +217,21 @@
   background: #cfa7d9;
   border: none;
   border-radius: 10px;
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   margin: 0;
+}
+@media screen and (min-width: 1200px) {
+  .main .nav-prices .nav-prices__button {
+    width: 346px;
+    height: 94px;
+    font-family: getFont("Roboto");
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+  }
 }
 .main .nav-prices .nav-prices__button:hover {
   cursor: pointer;
@@ -190,7 +244,7 @@
   align-items: center;
 }
 .main .nav-reviews .nav-reviews-title {
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 400;
   font-size: 36px;
   color: #fff;
@@ -208,14 +262,14 @@
   background-color: #e59af8;
 }
 .main .nav-reviews .nav-reviews-title-two {
-  font-family: getFont(Reem Kufi);
+  font-family: getFont("Reem-Kufi");
   font-weight: 400;
   font-size: 18px;
   color: #fff;
   margin-bottom: 10px;
 }
 .main .nav-reviews .nav-reviews__text {
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -230,7 +284,7 @@
   align-items: center;
 }
 .main .nav-contacts .nav-contacts-title {
-  font-family: getFont(Reem Kufi);
+  font-family: getFont("Reem-Kufi");
   font-weight: 700;
   font-size: 36px;
   color: #252020;
@@ -244,17 +298,23 @@
   justify-content: space-between;
   flex-direction: column;
   margin-bottom: 30px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main .nav-contacts .nav-contacts-list__item:hover {
   cursor: pointer;
   color: #c38cd1;
 }
 .main .nav-contacts .nav-contacts__link {
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 400;
   font-size: 14px;
   color: #000;
   margin: 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main .nav-contacts .nav-contacts__link:hover {
   cursor: pointer;
@@ -267,7 +327,7 @@
   border: none;
   border-radius: 44px;
   background: #c9b6de;
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -285,7 +345,7 @@
   height: 40px;
   margin-left: 20px;
   margin-top: 50px;
-  font-family: getFont(Reem Kufi);
+  font-family: getFont("Reem-Kufi");
   font-weight: 400;
   font-size: 32;
   color: white;
@@ -298,6 +358,9 @@
 }
 .footer .footer-list .footer-list__item {
   margin-bottom: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .footer-list .footer-list__item:hover {
   cursor: pointer;
@@ -307,10 +370,13 @@
   margin-bottom: 0px;
 }
 .footer .footer-list .footer-list__link {
-  font-family: getFont(Roboto);
+  font-family: getFont("Roboto");
   font-weight: 400;
   font-size: 14px;
   color: #fff;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .footer-list .footer-list__link:hover {
   cursor: pointer;
@@ -370,18 +436,17 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
+    max-width: 1199px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
+}
+
+.container:first-of-type {
+  max-width: none;
 }/*# sourceMappingURL=main.css.map */

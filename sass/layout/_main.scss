@@ -114,7 +114,7 @@
         padding-bottom: 150px;
 
         .main-title {
-            font-family: getFont(Reem Kufi);
+            font-family: getFont('Reem-Kufi');
             font-weight: 400;
             font-size: 32px;
             color: #fff;
@@ -122,7 +122,7 @@
         }
 
         .main-title-two {
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 600;
             font-size: 32px;
             color: #e396f6;
@@ -131,7 +131,7 @@
         }
 
         .main__text {
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 400;
             font-size: 14px;
             color: #fff;
@@ -146,7 +146,7 @@
             border: none;
             border-radius: 33px;
             background: #cfa7d9;
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 300;
             font-size: 18px;
             color: #fff;
@@ -182,7 +182,7 @@
         padding-bottom: 340px;
 
         .nav-about-title {
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 700;
             font-size: 36px;
             color: #c38cd1;
@@ -190,7 +190,7 @@
         }
 
         .nav-about__text {
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 300;
             font-size: 14px;
             color: #fff;
@@ -209,27 +209,45 @@
 
 
         .nav-prices-title {
-            font-family: getFont(Reem Kufi);
+            font-family: getFont('Reem-Kufi');
             font-weight: 700;
             font-size: 36px;
             color: #000;
             margin-bottom: 30px;
         }
 
+        .nav-prices-lists {
+            display: flex;
+        }
+
         .nav-prices-list {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            padding: 0;
+            list-style: none;
+            flex-direction: column;
+
+            @media screen and (min-width:1200px) {
+                margin-right: 370px;
+            }
+        }
+
+        .nav-prices-list-two {
+            display: none;
             padding: 0;
             list-style: none;
 
-            @media screen and (max-width:1199px) {
+
+            @media screen and (min-width:1200px) {
+                display: flex;
+                justify-content: space-between;
                 flex-direction: column;
             }
         }
 
         .nav-prices-list__item {
             margin-bottom: 50px;
+
         }
 
         .nav-prices-list__item:last-of-type {
@@ -242,11 +260,20 @@
             background: #cfa7d9;
             border: none;
             border-radius: 10px;
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 600;
             font-size: 14px;
             color: #fff;
             margin: 0;
+
+            @media screen and (min-width:1200px) {
+                width: 346px;
+                height: 94px;
+                font-family: getFont('Roboto');
+                font-weight: 600;
+                font-size: 24px;
+                color: #fff;
+            }
         }
 
         .nav-prices__button:hover {
@@ -268,7 +295,7 @@
         align-items: center;
 
         .nav-reviews-title {
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 400;
             font-size: 36px;
             color: #fff;
@@ -288,7 +315,7 @@
         }
 
         .nav-reviews-title-two {
-            font-family: getFont(Reem Kufi);
+            font-family: getFont('Reem-Kufi');
             font-weight: 400;
             font-size: 18px;
             color: #fff;
@@ -297,7 +324,7 @@
 
 
         .nav-reviews__text {
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 400;
             font-size: 14px;
             color: #fff;
@@ -314,7 +341,7 @@
         align-items: center;
 
         .nav-contacts-title {
-            font-family: getFont(Reem Kufi);
+            font-family: getFont('Reem-Kufi');
             font-weight: 700;
             font-size: 36px;
             color: #252020;
@@ -329,6 +356,9 @@
             justify-content: space-between;
             flex-direction: column;
             margin-bottom: 30px;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-contacts-list__item:hover {
@@ -337,11 +367,14 @@
         }
 
         .nav-contacts__link {
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 400;
             font-size: 14px;
             color: #000;
             margin: 0;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-contacts__link:hover {
@@ -362,7 +395,7 @@
             border: none;
             border-radius: 44px;
             background: #c9b6de;
-            font-family: getFont(Roboto);
+            font-family: getFont('Roboto');
             font-weight: 400;
             font-size: 14px;
             color: #fff;
