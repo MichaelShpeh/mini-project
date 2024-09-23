@@ -106,7 +106,7 @@
   padding-bottom: 150px;
 }
 .main .main-nav .main-title {
-  font-family: getFont("Reem-Kufi");
+  font-family: "Reem-Kufi";
   font-weight: 400;
   font-size: 32px;
   color: #fff;
