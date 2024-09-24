@@ -103,7 +103,8 @@
 }
 .main .main-nav {
   display: block;
-  padding-bottom: 150px;
+  padding-bottom: 500px;
+  position: relative;
 }
 .main .main-nav .main-title {
   font-family: "Reem-Kufi";
@@ -111,6 +112,10 @@
   font-size: 32px;
   color: #fff;
   margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
 .main .main-nav .main-title-two {
   font-family: getFont("Roboto");
@@ -118,6 +123,10 @@
   font-size: 32px;
   color: #e396f6;
   margin: 0;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  z-index: 2;
 }
 .main .main-nav .main__text {
   font-family: getFont("Roboto");
@@ -126,6 +135,10 @@
   color: #fff;
   margin: 0;
   margin-top: 60px;
+  position: absolute;
+  z-index: 2;
+  top: 140px;
+  left: 0px;
 }
 .main .main-nav .main__button {
   width: 168px;
@@ -140,13 +153,23 @@
   color: #fff;
   margin: 0;
   margin-top: 60px;
+  position: absolute;
+  top: 300px;
+  left: 0px;
+  z-index: 2;
 }
 .main .main-nav .main__button:hover {
   cursor: pointer;
 }
+.main .main-nav .picture-first {
+  position: absolute;
+  top: 0px;
+  left: -15px;
+}
 .main .nav-about {
   padding-top: 30px;
-  padding-bottom: 340px;
+  padding-bottom: 650px;
+  position: relative;
 }
 .main .nav-about .nav-about-title {
   font-family: getFont("Roboto");
@@ -154,14 +177,25 @@
   font-size: 36px;
   color: #c38cd1;
   margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
 .main .nav-about .nav-about__text {
   font-family: getFont("Roboto");
   font-weight: 300;
   font-size: 14px;
   color: #fff;
-  margin: 0;
-  margin-top: 40px;
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  z-index: 2;
+}
+.main .nav-about .picture-second {
+  position: absolute;
+  top: 130px;
+  right: -15px;
 }
 .main .nav-prices {
   background: #fff;
@@ -290,6 +324,34 @@
   color: #252020;
   margin-bottom: 10px;
 }
+.main .nav-contacts .list-both {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .main .nav-contacts .list-both {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+}
+.main .nav-contacts .list-both__item::nth-of-type(1) {
+  order: 1;
+}
+@media screen and (min-width: 1200px) {
+  .main .nav-contacts .list-both__item::nth-of-type(1) {
+    order: 2;
+  }
+}
+.main .nav-contacts .list-both__item::nth-of-type(2) {
+  order: 2;
+}
+@media screen and (min-width: 1200px) {
+  .main .nav-contacts .list-both__item::nth-of-type(2) {
+    order: 1;
+  }
+}
 .main .nav-contacts .nav-contacts-list {
   width: 206px;
   height: 251px;
@@ -326,11 +388,13 @@
   display: block;
   border: none;
   border-radius: 44px;
+  margin: 0 auto;
   background: #c9b6de;
   font-family: getFont("Roboto");
   font-weight: 400;
   font-size: 14px;
   color: #fff;
+  margin-bottom: 50px;
 }
 
 .footer {
@@ -340,11 +404,11 @@
 }
 .footer .foot {
   display: flex;
+  align-items: center;
 }
 .footer .footer-title {
   height: 40px;
   margin-left: 20px;
-  margin-top: 50px;
   font-family: getFont("Reem-Kufi");
   font-weight: 400;
   font-size: 32;
@@ -355,6 +419,13 @@
   display: flex;
   flex-direction: column;
   margin-left: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer-list {
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .footer .footer-list .footer-list__item {
   margin-bottom: 10px;
@@ -386,11 +457,6 @@
 body {
   font-family: "Roboto";
   box-sizing: border-box;
-}
-@media screen and (min-width: 1200px) {
-  body {
-    min-width: 1200px;
-  }
 }
 
 * {

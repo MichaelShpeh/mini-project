@@ -5,12 +5,12 @@
 
     .foot {
         display: flex;
+        align-items: center;
     }
 
     .footer-title {
         height: 40px;
         margin-left: 20px;
-        margin-top: 50px;
         font-family: getFont('Reem-Kufi');
         font-weight: 400;
         font-size: 32;
@@ -23,6 +23,12 @@
         display: flex;
         flex-direction: column;
         margin-left: 40px;
+
+        @media screen and (min-width:1200px) {
+            width: 800px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
         .footer-list__item {
             margin-bottom: 10px;
