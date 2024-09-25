@@ -23,7 +23,7 @@
   }
 }
 .header .header-list .header-list__link {
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   color: #fff;
@@ -116,6 +116,11 @@
   top: 0px;
   z-index: 2;
 }
+@media screen and (max-width: 480px) {
+  .main .main-nav .main-title {
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .main .main-nav .main-title {
     left: 0px;
@@ -128,7 +133,7 @@
   }
 }
 .main .main-nav .main-title-two {
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 600;
   font-size: 32px;
   color: #e396f6;
@@ -149,7 +154,7 @@
   }
 }
 .main .main-nav .main__text {
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -178,7 +183,7 @@
   border: none;
   border-radius: 33px;
   background: #cfa7d9;
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 300;
   font-size: 18px;
   color: #fff;
@@ -213,7 +218,7 @@
   position: relative;
 }
 .main .nav-about .nav-about-title {
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   color: #c38cd1;
@@ -229,7 +234,7 @@
   }
 }
 .main .nav-about .nav-about__text {
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 300;
   font-size: 14px;
   color: #fff;
@@ -263,7 +268,7 @@
   align-items: center;
 }
 .main .nav-prices .nav-prices-title {
-  font-family: getFont("Reem-Kufi");
+  font-family: "Reem Kufi";
   font-weight: 700;
   font-size: 36px;
   color: #000;
@@ -308,7 +313,7 @@
   background: #cfa7d9;
   border: none;
   border-radius: 10px;
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -318,7 +323,7 @@
   .main .nav-prices .nav-prices__button {
     width: 346px;
     height: 94px;
-    font-family: getFont("Roboto");
+    font-family: "Roboto";
     font-weight: 600;
     font-size: 24px;
     color: #fff;
@@ -326,6 +331,24 @@
 }
 .main .nav-prices .nav-prices__button:hover {
   cursor: pointer;
+}
+.main .nav-prices .nav-prices__button:nth-child(1) {
+  background: #cfa7d9;
+}
+.main .nav-prices .nav-prices__button:nth-child(2) {
+  background: #000;
+}
+.main .nav-prices .nav-prices__button:nth-child(3) {
+  background: #cfa7d9;
+}
+.main .nav-prices .nav-prices__button:nth-child(4) {
+  background: #000;
+}
+.main .nav-prices .nav-prices__button:nth-child(5) {
+  background: #cfa7d9;
+}
+.main .nav-prices .nav-prices__button:nth-child(6) {
+  background: #000;
 }
 .main .nav-reviews {
   padding-top: 10px;
@@ -335,7 +358,7 @@
   align-items: center;
 }
 .main .nav-reviews .nav-reviews-title {
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 36px;
   color: #fff;
@@ -353,14 +376,14 @@
   background-color: #e59af8;
 }
 .main .nav-reviews .nav-reviews-title-two {
-  font-family: getFont("Reem-Kufi");
+  font-family: "Reem Kufi";
   font-weight: 400;
   font-size: 18px;
   color: #fff;
   margin-bottom: 10px;
 }
 .main .nav-reviews .nav-reviews__text {
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -375,7 +398,7 @@
   align-items: center;
 }
 .main .nav-contacts .nav-contacts-title {
-  font-family: getFont("Reem-Kufi");
+  font-family: "Reem Kufi";
   font-weight: 700;
   font-size: 36px;
   color: #252020;
@@ -389,24 +412,7 @@
 }
 @media screen and (min-width: 1200px) {
   .main .nav-contacts .list-both {
-    flex-direction: row;
-    flex-grow: 1;
-  }
-}
-.main .nav-contacts .list-both__item::nth-of-type(1) {
-  order: 1;
-}
-@media screen and (min-width: 1200px) {
-  .main .nav-contacts .list-both__item::nth-of-type(1) {
-    order: 2;
-  }
-}
-.main .nav-contacts .list-both__item::nth-of-type(2) {
-  order: 2;
-}
-@media screen and (min-width: 1200px) {
-  .main .nav-contacts .list-both__item::nth-of-type(2) {
-    order: 1;
+    flex-direction: row-reverse;
   }
 }
 .main .nav-contacts .nav-contacts-list {
@@ -426,7 +432,7 @@
   color: #c38cd1;
 }
 .main .nav-contacts .nav-contacts__link {
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -447,7 +453,7 @@
   border-radius: 44px;
   margin: 0 auto;
   background: #c9b6de;
-  font-family: getFont("Roboto");
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -555,7 +561,7 @@ img {
 
 .container {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
 }
