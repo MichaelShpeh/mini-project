@@ -44,10 +44,17 @@
             margin: 0;
             position: absolute;
             top: 0px;
-            left: 0px;
+
             z-index: 2;
 
-            @media screen and (min-width:1200px) {}
+            @media screen and (max-width:1199px) {
+                left: 0px;
+            }
+
+            @media screen and (min-width:1200px) {
+                top: 20px;
+                right: 100px;
+            }
         }
 
         .main-title-two {
@@ -58,8 +65,16 @@
             margin: 0;
             position: absolute;
             top: 35px;
-            left: 0px;
             z-index: 2;
+
+            @media screen and (max-width:1199px) {
+                left: 0px;
+            }
+
+            @media screen and (min-width:1200px) {
+                top: 55px;
+                right: 170px;
+            }
         }
 
         .main__text {
@@ -72,7 +87,16 @@
             position: absolute;
             z-index: 2;
             top: 140px;
-            left: 0px;
+
+            @media screen and (max-width:1199px) {
+                left: 0px;
+            }
+
+            @media screen and (min-width:1200px) {
+                top: 70px;
+                right: 85px;
+                width: 300px;
+            }
         }
 
         .main__button {
@@ -90,8 +114,16 @@
             margin-top: 60px;
             position: absolute;
             top: 300px;
-            left: 0px;
             z-index: 2;
+
+            @media screen and (max-width:1199px) {
+                left: 0px;
+            }
+
+            @media screen and (min-width:1200px) {
+                top: 220px;
+                right: 200px;
+            }
         }
 
         .main__button:hover {
@@ -120,6 +152,10 @@
             top: 0px;
             left: 0px;
             z-index: 2;
+
+            @media screen and (min-width:1200px) {
+                left: 50px;
+            }
         }
 
         .nav-about__text {
@@ -131,12 +167,21 @@
             top: 90px;
             left: 0px;
             z-index: 2;
+
+            @media screen and (min-width:1200px) {
+                width: 400px;
+                leftt: 50px;
+            }
         }
 
         .picture-second {
             position: absolute;
             top: 130px;
             right: -15px;
+
+            @media screen and (min-width:1200px) {
+                top: -20px;
+            }
         }
     }
 

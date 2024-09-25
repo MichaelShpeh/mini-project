@@ -114,8 +114,18 @@
   margin: 0;
   position: absolute;
   top: 0px;
-  left: 0px;
   z-index: 2;
+}
+@media screen and (max-width: 1199px) {
+  .main .main-nav .main-title {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main .main-nav .main-title {
+    top: 20px;
+    right: 100px;
+  }
 }
 .main .main-nav .main-title-two {
   font-family: getFont("Roboto");
@@ -125,8 +135,18 @@
   margin: 0;
   position: absolute;
   top: 35px;
-  left: 0px;
   z-index: 2;
+}
+@media screen and (max-width: 1199px) {
+  .main .main-nav .main-title-two {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main .main-nav .main-title-two {
+    top: 55px;
+    right: 170px;
+  }
 }
 .main .main-nav .main__text {
   font-family: getFont("Roboto");
@@ -138,7 +158,18 @@
   position: absolute;
   z-index: 2;
   top: 140px;
-  left: 0px;
+}
+@media screen and (max-width: 1199px) {
+  .main .main-nav .main__text {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main .main-nav .main__text {
+    top: 70px;
+    right: 85px;
+    width: 300px;
+  }
 }
 .main .main-nav .main__button {
   width: 168px;
@@ -155,8 +186,18 @@
   margin-top: 60px;
   position: absolute;
   top: 300px;
-  left: 0px;
   z-index: 2;
+}
+@media screen and (max-width: 1199px) {
+  .main .main-nav .main__button {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main .main-nav .main__button {
+    top: 220px;
+    right: 200px;
+  }
 }
 .main .main-nav .main__button:hover {
   cursor: pointer;
@@ -182,6 +223,11 @@
   left: 0px;
   z-index: 2;
 }
+@media screen and (min-width: 1200px) {
+  .main .nav-about .nav-about-title {
+    left: 50px;
+  }
+}
 .main .nav-about .nav-about__text {
   font-family: getFont("Roboto");
   font-weight: 300;
@@ -192,10 +238,21 @@
   left: 0px;
   z-index: 2;
 }
+@media screen and (min-width: 1200px) {
+  .main .nav-about .nav-about__text {
+    width: 400px;
+    leftt: 50px;
+  }
+}
 .main .nav-about .picture-second {
   position: absolute;
   top: 130px;
   right: -15px;
+}
+@media screen and (min-width: 1200px) {
+  .main .nav-about .picture-second {
+    top: -20px;
+  }
 }
 .main .nav-prices {
   background: #fff;
