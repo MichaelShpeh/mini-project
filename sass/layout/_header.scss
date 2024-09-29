@@ -87,11 +87,44 @@
 
     .header__input:checked~.label>.label__button-closed {
         display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
     }
 
     input[type="checkbox"]:checked~.label-list {
         display: flex;
     }
 
+    .label-list {
+        width: 100%;
+        height: 365px;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        z-index: 3;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
 
+        .label-list__item {}
+
+        .label-list__link {
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 20px;
+            color: #c38cd1;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .label-list__link:hover {
+            cursor: pointer;
+
+            color: black;
+        }
+    }
 }
